@@ -1,0 +1,44 @@
+.myLinks {
+  display: none;
+}
+
+.myLinksActive {
+  display: block;
+  margin-top: 40px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.menu {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../public/menuBlack.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu:hover {
+  background-color: #730217;
+  color: black;
+  background-image: url("../../public/menuWhite.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pages:hover {
+  background-color: #730217;
+  color: white;
+}

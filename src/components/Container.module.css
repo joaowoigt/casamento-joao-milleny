@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgContainer {
+  height: 40%;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.listGridItem {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 16px;
+  gap: 16px 16px;
+}

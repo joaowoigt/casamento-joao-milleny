@@ -1,0 +1,75 @@
+.cursive {
+  font-family: "Playwrite DK Uloopet", cursive;
+  font-optical-sizing: auto;
+  color: #730217;
+  font-size: 2.5rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.latoThin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.15rem;
+}
+
+.latoLight {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.latoRegular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+}
+
+.latoBold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+}
+
+.latoBlack {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #730217;
+}
+
+.latoThinItalic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.latoLightItalic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.latoRegularItalic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.latoBoldItalic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.latoBlackItalic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

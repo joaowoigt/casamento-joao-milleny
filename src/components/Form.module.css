@@ -1,0 +1,16 @@
+
+.inputGroup {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+.inputLabel {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+.inputField {
+    height: 30px;
+  }
