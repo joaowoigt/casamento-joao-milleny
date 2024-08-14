@@ -23,4 +23,5 @@
   grid-template-columns: auto auto;
   margin-top: 16px;
   gap: 16px 16px;
+  justify-content: space-around;
 }

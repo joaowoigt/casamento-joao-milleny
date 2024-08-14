@@ -11,12 +11,30 @@ export default function (req, res) {
     },
     secure: true
   })
+
+  let name = req.body.name
+  let email = req.body.email
+  let isGoing = req.body.isGoing
+  let adultsGuests = req.body.adultsGuests
+  let childreGuests = req.body.childreGuests
+  let subject = `Confirmação de ${name}`
+  let infos = `
+    <b>Nome: </b> ${name}<br>
+    <b>Email: </b> ${email}<br>
+    <b>Quantidade de adultos: </b>${adultsGuests}<br>
+    <b>Quantidade de crianças: </b> ${childreGuests}<br>
+  `
+  let msg = `Seu convidado <b>${name}</b> (${email}) acabou de confirmar que
+   ${isGoing === "Sim" ? "irá" : "não irá"} ao seu casamento<br><br>
+   ${isGoing === "Sim" ? infos : "Que peninha!"}
+   `
+
   const mailData = {
     from: "wills030797@gmail.com",
     to: "joaowoigt@gmail.com",
-    subject: `Confirmação de ${req.body.name}`,
-    text: req.body.name,
-    html: `<div>{req.body.name}</div>`
+    subject: subject,
+    text: msg,
+    html: msg
   }
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
@@ -25,6 +43,6 @@ export default function (req, res) {
       console.log(info)
     }
   })
-  console.log(req.body)
+  console.log("body da api" + req.body.name)
   res.status(200)
 }

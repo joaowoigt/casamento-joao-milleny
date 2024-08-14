@@ -15,6 +15,15 @@
   letter-spacing: 0.15rem;
 }
 
+.latoThinJustify {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1;
+  letter-spacing: 0.15rem;
+}
+
 .latoLight {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -24,6 +33,7 @@
 .latoRegular {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  text-align: justify;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.15rem;

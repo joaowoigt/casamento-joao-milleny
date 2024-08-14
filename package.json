@@ -4,11 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@nextui-org/radio": "^2.1.4",
+    "@nextui-org/system": "^2.2.5",
+    "@nextui-org/theme": "^2.2.9",
     "dotenv": "^16.4.5",
+    "framer-motion": "^11.3.27",
     "next": "^14.2.5",
     "nodemailer": "^6.9.14",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.10"
   },
   "scripts": {
     "dev": "next dev",
