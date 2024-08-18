@@ -1,9 +1,22 @@
 .cursive {
-  font-family: "Playwrite DK Uloopet", cursive;
+  font-family: "Great Vibes", cursive;
   font-optical-sizing: auto;
   color: #730217;
-  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  line-height: 5rem;
+  font-size: 3.5rem;
   margin-left: 25%;
+  margin-right: 25%;
+}
+
+.cursivePresence {
+  font-family: "Great Vibes", cursive;
+  font-optical-sizing: auto;
+  color: #730217;
+  letter-spacing: 0.15rem;
+  line-height: 5rem;
+  font-size: 3.5rem;
+  margin-left: 15%;
   margin-right: 25%;
 }
 

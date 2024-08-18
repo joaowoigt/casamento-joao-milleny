@@ -3,7 +3,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <style>{`
           * {
-            background: #FEE5D3;
+            color-scheme: light;
+            background: #f7f0eb;
             color: black;
           }
         `}</style>

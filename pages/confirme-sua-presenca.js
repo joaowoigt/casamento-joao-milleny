@@ -1,9 +1,9 @@
 import container from "../src/components/Container.module.css"
 import styles from "../src/components/Form.module.css"
+import font from "../src/components/Font.module.css"
 import React, { useState } from "react"
 import HomeMenu from "../src/homeMenu"
-import CursiveTitle from "../src/CursiveTitle"
-import { RadioGroup, Radio } from "@nextui-org/radio"
+import CursiveTitle from "../src/CursiveTitlePresence"
 
 export default function ListaPage() {
   const [name, setName] = useState("")
@@ -13,6 +13,7 @@ export default function ListaPage() {
   const [isGoing, setIsGoing] = useState("Não")
   const [adultsGuests, setAdultsGuests] = useState("0")
   const [childreGuests, setChildrenGuests] = useState("0")
+  const [childreMiddleGuests, setChildrenMiddleGuests] = useState("0")
   const [buttonText, setButtonText] = useState("Confirme sua presença")
   const [submitted, setSubmitted] = useState(false)
 
@@ -38,12 +39,16 @@ export default function ListaPage() {
     setChildrenGuests(event.target.value)
   }
 
+  const handleChildrenMiddleGuests = (event) => {
+    setChildrenMiddleGuests(event.target.value)
+    console.log(event.target.value)
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log("Sending")
-    if (name === "" || email === "") {
+    if (name === "") {
       setErrorName(name === "")
-      setErrorEmail(email === "")
       return
     }
 
@@ -54,13 +59,15 @@ export default function ListaPage() {
     setIsGoing("Não")
     setAdultsGuests("0")
     setChildrenGuests("0")
+    setChildrenMiddleGuests("0")
 
     let data = {
       name,
       email,
       isGoing,
       adultsGuests,
-      childreGuests
+      childreGuests,
+      childreMiddleGuests
     }
 
     fetch("/api/contact", {
@@ -87,7 +94,19 @@ export default function ListaPage() {
     <div className={container.centerDiv}>
       <div className={styles.mainContainer}>
         <HomeMenu></HomeMenu>
-        <CursiveTitle>Confirmar presença</CursiveTitle>
+        <CursiveTitle className={font.cursivePresence}>
+          Confirmar presença
+        </CursiveTitle>
+        <h4 className={font.latoRegular}>
+          Para confirmar sua presença, é necessário{" "}
+          <b>preencher o formulario</b> abaixo. Indique quantos adultos
+          (contando com você) e crianças irão a festa.
+          <br></br> Se não for ao evento, também é necessário informar pelo
+          formulário.
+          <br></br>Caso prefira, você também pode confirmar a sua presença nos
+          enviando mensagem no Whatsapp: (19) 98826-0505 (João) ou (19)
+          97131-6619 (Milleny).
+        </h4>
         <form>
           <formGroup className={styles.inputGroup}>
             <label htmlFor="name" className={styles.inputLabel}>
@@ -99,7 +118,9 @@ export default function ListaPage() {
               className={styles.inputField}
               onChange={handleName}
             />
-            {errorName ? <h3>Seu nome é obrigatório</h3> : null}
+            {errorName ? (
+              <h3 className={styles.warning}>Seu nome é obrigatório</h3>
+            ) : null}
           </formGroup>
 
           <formGroup className={styles.inputGroup}>
@@ -112,7 +133,6 @@ export default function ListaPage() {
               className={styles.inputField}
               onChange={handleEmail}
             />
-            {errorName ? <h3>Email é obrigatório</h3> : null}
           </formGroup>
           <formGroup className={styles.inputGroup}>
             <p className={styles.inputLabel}>Você irá ao evento?</p>
@@ -190,13 +210,58 @@ export default function ListaPage() {
           <br></br>
           <formGroup>
             <label htmlFor="childrens" className={styles.inputLabel}>
-              Quantas crianças (até 5 anos)?
+              Quantas crianças (até 4 anos)?
             </label>
             <select
               className={styles.dropdown}
               value={childreGuests}
               onChange={handleChildrenGuests}
               name="childrens"
+            >
+              <option value="0" className={styles.dropdownContent}>
+                0
+              </option>
+              <option value="1" className={styles.dropdownContent}>
+                1
+              </option>
+              <option value="2" className={styles.dropdownContent}>
+                2
+              </option>
+              <option value="3" className={styles.dropdownContent}>
+                3
+              </option>
+              <option value="4" className={styles.dropdownContent}>
+                4
+              </option>
+              <option value="5" className={styles.dropdownContent}>
+                5
+              </option>
+              <option value="6" className={styles.dropdownContent}>
+                6
+              </option>
+              <option value="7" className={styles.dropdownContent}>
+                7
+              </option>
+              <option value="8" className={styles.dropdownContent}>
+                8
+              </option>
+              <option value="9" className={styles.dropdownContent}>
+                9
+              </option>
+              <option value="10" className={styles.dropdownContent}>
+                10
+              </option>
+            </select>
+          </formGroup>
+          <formGroup>
+            <label htmlFor="childrensMiddle" className={styles.inputLabel}>
+              Quantas crianças (de 5 a 9 anos)?
+            </label>
+            <select
+              className={styles.dropdown}
+              value={childreMiddleGuests}
+              onChange={handleChildrenMiddleGuests}
+              name="childrensMiddle"
             >
               <option value="0" className={styles.dropdownContent}>
                 0

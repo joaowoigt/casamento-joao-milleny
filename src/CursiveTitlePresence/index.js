@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../components/Font.module.css"
 
-export default function CursiveTitle({ children }) {
+export default function CursiveTitlePresence({ children }) {
   return (
     <div>
       <Head>
@@ -12,7 +12,7 @@ export default function CursiveTitle({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <h1 className={styles.cursive}>{children}</h1>
+      <h1 className={styles.cursivePresence}>{children}</h1>
     </div>
   )
 }

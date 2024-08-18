@@ -11,22 +11,24 @@ export default function ListaPage() {
       <div className={containers.centerDiv}>
         <div className={containers.mainContainer}>
           <CursiveTitle>Lista de presentes</CursiveTitle>
-          <h3 className={fonts.latoThinJustify}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lectus
-            nulla, congue eget vulputate ut, sollicitudin vitae sem. Integer
-            ultricies volutpat tortor, ac imperdiet orci hendrerit ac. Sed
-            feugiat vitae neque vitae feugiat. Sed arcu nunc, varius sit amet
-            mauris non, efficitur ornare libero. Duis at quam a erat hendrerit
-            lobortis nec ac lacus. Cras elementum auctor consequat. Aliquam
-            eleifend nulla at
-          </h3>
+          <h4 className={fonts.latoRegular}>
+            Para nosso casamento, ao inves de recebermos os presentes como o
+            tradicional, gostariamos de facilitar para ambas as partes, por isso
+            nossa lista de presente é apenas simbólica para que vocês possam nos
+            dar qualquer valor e assim contribuir na realização dos nossos
+            sonhos. Assim, a lista é uma referência do que pensamos em fazer com
+            a sua contribuição.
+            <br></br>Abaixo{" "}
+            <b>você encontra o QRcode para realizar o pix para nossa conta.</b>{" "}
+            Sinta-se a vontade para contribuir como puder.
+          </h4>
           <img
-            className={containers.imgContainer}
-            src="images\header.jpeg"
+            className={containers.imgPixContainer}
+            src="images\pix-qr-code.png"
           ></img>
           <div className={containers.listGridItem}>
-            <ListItem img="\images\avatar.jpg" value="R$ 1000,00">
-              Texto de descrição do presente
+            <ListItem img="\images\avatar.jpg" value="R$ 50,00">
+              Whiskas para nossos gatos
             </ListItem>
             <ListItem img="\images\avatar.jpg" value="R$ 1000,00">
               Texto de descrição do presente
@@ -40,8 +42,8 @@ export default function ListaPage() {
             <ListItem img="\images\avatar.jpg" value="R$ 1000,00">
               Texto de descrição do presente
             </ListItem>
-            <ListItem img="\images\avatar.jpg" value="R$ 1000,00">
-              Texto de descrição do presente
+            <ListItem img="\images\avatar.jpg" value="R$ 10.000,00">
+              Viagem pra Paris
             </ListItem>
           </div>
         </div>

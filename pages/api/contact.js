@@ -17,12 +17,14 @@ export default function (req, res) {
   let isGoing = req.body.isGoing
   let adultsGuests = req.body.adultsGuests
   let childreGuests = req.body.childreGuests
+  let childrenMiddleGuests = req.body.childreMiddleGuests
   let subject = `Confirmação de ${name}`
   let infos = `
     <b>Nome: </b> ${name}<br>
     <b>Email: </b> ${email}<br>
     <b>Quantidade de adultos: </b>${adultsGuests}<br>
-    <b>Quantidade de crianças: </b> ${childreGuests}<br>
+    <b>Quantidade de crianças até 4 anos: </b> ${childreGuests}<br>
+    <b>Quantidade de crianças de 5 a 9 anos: </b> ${childrenMiddleGuests}<br>
   `
   let msg = `Seu convidado <b>${name}</b> (${email}) acabou de confirmar que
    ${isGoing === "Sim" ? "irá" : "não irá"} ao seu casamento<br><br>
@@ -43,6 +45,6 @@ export default function (req, res) {
       console.log(info)
     }
   })
-  console.log("body da api" + req.body.name)
+  console.log("body da api" + req.body.childrenMiddleGuests)
   res.status(200)
 }

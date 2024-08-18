@@ -18,16 +18,38 @@ export default function HomePage() {
       <div className={container.mainContainer}>
         <HomeMenu></HomeMenu>
         <CursiveTitle>João & Milleny</CursiveTitle>
-        <img className={container.imgContainer} src="images\header.jpeg"></img>
+        <img
+          className={container.imgContainer}
+          src="images\foto-nossa.jpg"
+        ></img>
         <h4 className={fonts.latoRegular}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lectus
-          nulla, congue eget vulputate ut, sollicitudin vitae sem. Integer
-          ultricies volutpat tortor, ac imperdiet orci hendrerit ac. Sed feugiat
-          vitae neque vitae feugiat. Sed arcu nunc, varius sit amet mauris non,
-          efficitur ornare libero. Duis at quam a erat hendrerit lobortis nec ac
-          lacus. Cras elementum auctor consequat. Aliquam eleifend nulla at
-          sodales molestie.{" "}
+          É com muita alegria que nós, Milleny e João, anunciamos a nossa união
+          eterna. <br></br>No dia{" "}
+          <b>05 de Julho de 2025 às 15h30, no espaço Colibri em Limeira - SP</b>
+          , diante de nossos amigos e familiares, gostariamos de celebrar o
+          nosso amor. <br></br> Neste site você pode acessar nossa lista de
+          presentes e o formulário de confirmação de presença.
         </h4>
+        <h5 className={fonts.latoRegular}>
+          Qualquer duvida você pode nos contatar nos telefones:<br></br>
+          <b>João: (19) 98826-0505</b>
+          <br></br>
+          <b>Milleny: (19) 97131-6619</b>
+          <br></br>
+          <br></br>
+          Endereço da festa:
+          <br></br>
+          <b>
+            Rua Servidão 1, 299-627 - Parque das Nações, Limeira - SP, 13480-970
+          </b>
+          <br></br>
+          Ou acesse a localização{" "}
+          <b>
+            <a href="https://www.google.com/maps/place/Espa%C3%A7o+Colibri/@-22.5869195,-47.4192071,16z/data=!4m10!1m2!2m1!1sColibri+limeira!3m6!1s0x94c881aa7137088f:0x2510e69c03cf6091!8m2!3d-22.5869195!4d-47.4101949!15sCg9Db2xpYnJpIGxpbWVpcmGSAQ13ZWRkaW5nX3ZlbnVl4AEA!16s%2Fg%2F11g6rl0k7z?entry=ttu">
+              clicando aqui
+            </a>
+          </b>
+        </h5>
       </div>
     </div>
   )

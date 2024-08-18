@@ -7,10 +7,26 @@
 }
 
 .imgContainer {
-  height: 40%;
-  width: 100%;
+  padding: 12px;
+  height: 50vh;
+  width: 90vw;
   max-width: 500px;
   border-radius: 25px;
+}
+
+.imgListContainer {
+  height: 50%;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.imgPixContainer {
+  height: 200px;
+  width: 50%;
+  margin-left: 25%;
+  max-width: 500px;
+  border-radius: 20px;
 }
 
 .centerDiv {
