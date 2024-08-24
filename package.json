@@ -4,11 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@chakra-ui/next-js": "^2.2.0",
-    "@chakra-ui/react": "^2.8.2",
     "@clerk/nextjs": "^5.3.3",
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
     "@nextui-org/radio": "^2.1.4",
     "@nextui-org/system": "^2.2.5",
     "@nextui-org/theme": "^2.2.9",
