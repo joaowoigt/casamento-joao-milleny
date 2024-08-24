@@ -5,6 +5,7 @@ import fonts from "../src/components/Font.module.css"
 import CursiveTitle from "../src/CursiveTitle"
 
 export default function ListaPage() {
+  localStorage.theme = "light"
   return (
     <div>
       <HomeMenu></HomeMenu>
