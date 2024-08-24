@@ -4,7 +4,7 @@ import HomeMenu from "../src/homeMenu"
 import container from "../src/components/Container.module.css"
 import fonts from "../src/components/Font.module.css"
 import { ChakraProvider } from "@chakra-ui/react"
-import { theme } from "@/theme"
+import { theme } from "../src/theme"
 
 export default function HomePage() {
   return (
