@@ -3,8 +3,11 @@ import CursiveTitle from "../src/CursiveTitle"
 import HomeMenu from "../src/homeMenu"
 import container from "../src/components/Container.module.css"
 import fonts from "../src/components/Font.module.css"
+import { useTheme } from "next-themes"
 
 export default function HomePage() {
+  const { theme, setTheme } = useTheme()
+  setTheme("light")
   return (
     <div className={container.centerDiv}>
       <Head>
