@@ -3,7 +3,9 @@
 }
 
 .myLinksActive {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -14,6 +16,12 @@
   text-decoration: none;
   font-size: 17px;
   display: block;
+}
+
+.mainDivs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* Style the hamburger menu */
@@ -36,6 +44,12 @@
   background-image: url("../../public/menuWhite.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.pages {
+  font-family: "Quattrocento", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .pages:hover {

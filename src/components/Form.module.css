@@ -7,7 +7,7 @@
   text-align: left;
   margin: 8px 8px 16px 0px;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
   font-size: larger;
 }
 
@@ -21,7 +21,7 @@
   margin-bottom: 16px;
   font-size: larger;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
 }
 
 .dropdown {
@@ -29,7 +29,7 @@
   padding: 16px 20px;
   margin-top: 16px;
   margin-bottom: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
   font-size: 20px;
   border: none;
   border-radius: 4px;
@@ -39,7 +39,6 @@
 .buttonForm {
   border-radius: 8px;
   padding: 16px;
-  margin-left: 15%;
   background-color: #730217;
   font-size: 16px;
   font-weight: bold;
@@ -83,19 +82,27 @@
 .radioLabels {
   font-size: larger;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
 }
 
 .finishMessage {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
 }
 
 .warning {
   color: red;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quattrocento", serif;
   font-size: larger;
+}
+
+.centerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }

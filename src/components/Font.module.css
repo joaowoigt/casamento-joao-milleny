@@ -1,22 +1,15 @@
 .cursive {
-  font-family: "Great Vibes", cursive;
-  font-optical-sizing: auto;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
   color: #730217;
-  letter-spacing: 0.15rem;
   line-height: 5rem;
-  font-size: 3.5rem;
-  margin-left: 25%;
-  margin-right: 25%;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.cursivePresence {
-  font-family: "Great Vibes", cursive;
-  font-optical-sizing: auto;
-  color: #730217;
-  letter-spacing: 0.15rem;
-  line-height: 5rem;
-  font-size: 3.5rem;
-  margin-left: 15%;
+.cursiveMargin {
+  margin-left: 25%;
   margin-right: 25%;
 }
 
@@ -95,4 +88,54 @@
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.quattrocentoRegular {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+}
+
+.quattrocentoBold {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quattrocentoBoldGifts {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  justify-content: center;
+  align-self: center;
+  font-size: 20px;
+  margin-top: 32px;
+}
+.quattrocentoBoldGiftsValue {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  justify-content: center;
+  align-self: center;
+  font-size: 20px;
+  margin-top: 32px;
+  color: #730217;
+}
+
+.quattrocentoThin {
+  font-family: "Quattrocento", serif;
+  font-weight: 600;
+  font-size: medium;
+  text-align: center;
+}
+
+.quattrocentoBlack {
+  font-family: "Quattrocento", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #730217;
 }

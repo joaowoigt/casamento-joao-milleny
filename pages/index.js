@@ -11,30 +11,36 @@ export default function HomePage() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quattrocento:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </Head>
       <div className={container.mainContainer}>
         <HomeMenu></HomeMenu>
-        <CursiveTitle>João & Milleny</CursiveTitle>
+        <div className={fonts.cursiveMargin}>
+          <CursiveTitle>João & Milleny</CursiveTitle>
+        </div>
         <img
           className={container.imgContainer}
           src="images\foto-nossa.jpg"
         ></img>
-        <h4 className={fonts.latoRegular}>
+        <h3 className={fonts.quattrocentoRegular}>
           É com muita alegria que nós, Milleny e João, anunciamos a nossa união
           eterna. <br></br>No dia{" "}
           <b>05 de Julho de 2025 às 15h30, no espaço Colibri em Limeira - SP</b>
           , diante de nossos amigos e familiares, gostariamos de celebrar o
           nosso amor. <br></br> Neste site você pode acessar nossa lista de
           presentes e o formulário de confirmação de presença.
-        </h4>
-        <h5 className={fonts.latoRegular}>
+        </h3>
+        <h4 className={fonts.quattrocentoRegular}>
           Qualquer duvida você pode nos contatar nos telefones:<br></br>
-          <b>João: (19) 98826-0505</b>
+          <a href="https://wa.me/19988260505">
+            <b>João: (19) 98826-0505</b>
+          </a>
           <br></br>
-          <b>Milleny: (19) 97131-6619</b>
+          <a href="https://wa.me/19971316619">
+            <b>Milleny: (19) 97131-6619</b>
+          </a>
           <br></br>
           <br></br>
           Endereço da festa:
@@ -49,7 +55,7 @@ export default function HomePage() {
               clicando aqui
             </a>
           </b>
-        </h5>
+        </h4>
       </div>
     </div>
   )

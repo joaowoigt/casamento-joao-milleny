@@ -13,7 +13,7 @@ export default function HomeMenu() {
   return (
     <div class={menu.topnav}>
       <Head></Head>
-      <div className={isOpen ? menu.myLinksActive : menu.myLinks}>
+      <div className={menu.myLinksActive}>
         <Link href={"/"} className={menu.pages}>
           Sobre
         </Link>
@@ -24,7 +24,6 @@ export default function HomeMenu() {
           Confirmar presença
         </Link>
       </div>
-      <a className={menu.menu} onClick={handleClick}></a>
     </div>
   )
 }

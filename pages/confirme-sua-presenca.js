@@ -3,7 +3,8 @@ import styles from "../src/components/Form.module.css"
 import font from "../src/components/Font.module.css"
 import React, { useState } from "react"
 import HomeMenu from "../src/homeMenu"
-import CursiveTitle from "../src/CursiveTitlePresence"
+import Head from "next/head"
+import CursiveTitle from "../src/CursiveTitle"
 
 export default function ListaPage() {
   const [name, setName] = useState("")
@@ -52,6 +53,11 @@ export default function ListaPage() {
       return
     }
 
+    if (email === "") {
+      setErrorEmail(email === "")
+      return
+    }
+
     setButtonText("Obrigado por confirmar sua presença!")
     setSubmitted(true)
     setName("")
@@ -92,21 +98,28 @@ export default function ListaPage() {
 
   return (
     <div className={container.centerDiv}>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quattrocento:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <div className={styles.mainContainer}>
         <HomeMenu></HomeMenu>
-        <CursiveTitle className={font.cursivePresence}>
-          Confirmar presença
-        </CursiveTitle>
-        <h4 className={font.latoRegular}>
+        <CursiveTitle>Confirmar presença</CursiveTitle>
+        <h3 className={font.quattrocentoRegular}>
           Para confirmar sua presença, é necessário{" "}
           <b>preencher o formulario</b> abaixo. Indique quantos adultos
           (contando com você) e crianças irão a festa.
           <br></br> Se não for ao evento, também é necessário informar pelo
           formulário.
           <br></br>Caso prefira, você também pode confirmar a sua presença nos
-          enviando mensagem no Whatsapp: (19) 98826-0505 (João) ou (19)
-          97131-6619 (Milleny).
-        </h4>
+          enviando mensagem no Whatsapp:{" "}
+          <a href="https://wa.me/19988260505">(19) 98826-0505 (João)</a> ou{" "}
+          <a href="https/wa.me/19971316619">(19) 97131-6619 (Milleny).</a>
+        </h3>
         <form>
           <formGroup className={styles.inputGroup}>
             <label htmlFor="name" className={styles.inputLabel}>
@@ -124,15 +137,18 @@ export default function ListaPage() {
           </formGroup>
 
           <formGroup className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.inputLabel}>
-              Email:
+            <label htmlFor="phone" className={styles.inputLabel}>
+              Telefone:
             </label>
             <input
               type="text"
-              name="email"
+              name="phone"
               className={styles.inputField}
               onChange={handleEmail}
             />
+            {errorEmail ? (
+              <h3 className={styles.warning}>Seu Telefone é obrigatório</h3>
+            ) : null}
           </formGroup>
           <formGroup className={styles.inputGroup}>
             <p className={styles.inputLabel}>Você irá ao evento?</p>
@@ -299,20 +315,22 @@ export default function ListaPage() {
             </select>
           </formGroup>
           <br></br>
-          {submitted ? (
-            <p className={styles.finishMessage}>
-              Obrigado por confirmar sua presença!
-            </p>
-          ) : (
-            <input
-              className={styles.buttonForm}
-              type="submit"
-              value={buttonText}
-              onClick={(event) => {
-                handleSubmit(event)
-              }}
-            />
-          )}
+          <div className={styles.centerButton}>
+            {submitted ? (
+              <p className={styles.finishMessage}>
+                Obrigado por confirmar sua presença!
+              </p>
+            ) : (
+              <input
+                className={styles.buttonForm}
+                type="submit"
+                value={buttonText}
+                onClick={(event) => {
+                  handleSubmit(event)
+                }}
+              />
+            )}
+          </div>
         </form>
       </div>
     </div>
