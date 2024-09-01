@@ -7,8 +7,8 @@
 }
 
 .imgContainer {
-  height: 600px;
-  width: 500px;
+  height: 0, 5vh;
+  width: 95vw;
   max-width: 500px;
   border-radius: 25px;
 }
