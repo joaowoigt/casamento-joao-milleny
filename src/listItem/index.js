@@ -2,6 +2,7 @@ import styles from "../components/ListItem.module.css"
 import container from "../components/Container.module.css"
 import fonts from "../components/Font.module.css"
 import Head from "next/head"
+import Link from "next/link"
 
 export default function ListItem({ children, img, value }) {
   return (
@@ -19,6 +20,19 @@ export default function ListItem({ children, img, value }) {
       {value != "" ? (
         <h3 className={fonts.quattrocentoBoldGiftsValue}>{value}</h3>
       ) : null}
+      <Link
+        href={{
+          pathname: "/buypage",
+          query: {
+            image: img,
+            value: value,
+            name: children
+          }
+        }}
+        className={styles.buttonStyle}
+      >
+        Comprar
+      </Link>
     </div>
   )
 }
