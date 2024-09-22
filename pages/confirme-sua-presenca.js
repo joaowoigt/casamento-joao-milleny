@@ -5,6 +5,7 @@ import React, { useState } from "react"
 import HomeMenu from "../src/homeMenu"
 import Head from "next/head"
 import CursiveTitle from "../src/CursiveTitle"
+import { Button } from "@nextui-org/button"
 
 export default function ListaPage() {
   const [name, setName] = useState("")
@@ -48,12 +49,9 @@ export default function ListaPage() {
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log("Sending")
-    if (name === "") {
-      setErrorName(name === "")
-      return
-    }
 
-    if (email === "") {
+    if (name === "" || email === "") {
+      setErrorName(name === "")
       setErrorEmail(email === "")
       return
     }
@@ -106,7 +104,7 @@ export default function ListaPage() {
           rel="stylesheet"
         />
       </Head>
-      <div className={styles.mainContainer}>
+      <div className={container.mainContainer}>
         <HomeMenu></HomeMenu>
         <CursiveTitle>Confirmar presença</CursiveTitle>
         <h3 className={font.quattrocentoRegular}>
@@ -321,14 +319,15 @@ export default function ListaPage() {
                 Obrigado por confirmar sua presença!
               </p>
             ) : (
-              <input
+              <Button
                 className={styles.buttonForm}
                 type="submit"
-                value={buttonText}
                 onClick={(event) => {
                   handleSubmit(event)
                 }}
-              />
+              >
+                {buttonText}
+              </Button>
             )}
           </div>
         </form>
