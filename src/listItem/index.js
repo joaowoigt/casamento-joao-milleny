@@ -4,7 +4,7 @@ import fonts from "../components/Font.module.css"
 import Head from "next/head"
 import Link from "next/link"
 
-export default function ListItem({ children, img, value }) {
+export default function ListItem({ children, img, value, showValue }) {
   return (
     <div className={styles.itemContaier}>
       <Head>
@@ -17,7 +17,7 @@ export default function ListItem({ children, img, value }) {
       </Head>
       <img className={container.imgListContainer} src={img}></img>
       <h3 className={fonts.quattrocentoBoldGifts}>{children}</h3>
-      {value != "" ? (
+      {showValue ? (
         <h3 className={fonts.quattrocentoBoldGiftsValue}>{value}</h3>
       ) : null}
       <Link

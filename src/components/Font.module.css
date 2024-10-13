@@ -5,7 +5,12 @@
   color: #730217;
   line-height: 5rem;
   font-size: 3rem;
+}
+
+.cursiveDiv {
+  display: flex;
   text-align: center;
+  max-width: 360px;
 }
 
 .cursiveMargin {

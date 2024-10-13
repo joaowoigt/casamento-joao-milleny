@@ -106,7 +106,9 @@ export default function ListaPage() {
       </Head>
       <div className={container.mainContainer}>
         <HomeMenu></HomeMenu>
-        <CursiveTitle>Confirmar presença</CursiveTitle>
+        <div className={container.centerDiv}>
+          <CursiveTitle>Confirmar presença</CursiveTitle>
+        </div>
         <h3 className={font.quattrocentoRegular}>
           Para confirmar sua presença, é necessário{" "}
           <b>preencher o formulario</b> abaixo. Indique quantos adultos

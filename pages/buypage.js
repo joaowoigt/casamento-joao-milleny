@@ -11,7 +11,7 @@ import React, { useState } from "react"
 export default function BuyPage() {
   const router = useRouter()
   const product = router.query.name
-  const pixCode = "VAMOS DIZER QUE ESSE É O CODIGO"
+  const pixCode = "9050c3f1-6596-4904-9c7f-78e57e9704a9"
   const [copyButtonText, setCopyButtonText] = useState("Copiar codigo pix!")
 
   const [sendButtonText, setSendButtonText] = useState("Enviar")
@@ -88,12 +88,9 @@ export default function BuyPage() {
           src={router.query.image}
         ></img>
         <h3 className={fonts.quattrocentoRegular}>
-          É com muita alegria que nós, Milleny e João, anunciamos a nossa união
-          eterna. <br></br>No dia{" "}
-          <b>05 de Julho de 2025 às 15h30, no espaço Colibri em Limeira - SP</b>
-          , diante de nossos amigos e familiares, gostariamos de celebrar o
-          nosso amor. <br></br> Neste site você pode acessar nossa lista de
-          presentes e o formulário de confirmação de presença.
+          Muito obrigado por escolher nos ajudar! <br></br>Agora bastar copiar o
+          código pix clicando no botão abaixo e nos enviar o valor do presente{" "}
+          {router.query.value} ou o que desejar!
         </h3>
         <Button onClick={copyPix} className={formStyle.buttonForm}>
           {copyButtonText}

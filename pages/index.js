@@ -17,7 +17,7 @@ export default function HomePage() {
       </Head>
       <div className={container.mainContainer}>
         <HomeMenu></HomeMenu>
-        <div className={fonts.cursiveMargin}>
+        <div className={container.centerDiv}>
           <CursiveTitle>João & Milleny</CursiveTitle>
         </div>
         <img
