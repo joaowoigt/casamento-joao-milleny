@@ -58,10 +58,14 @@
 .back {
   height: 20px;
   align-items: center;
+  background-image: url("../../public/arrow-left.svg");
   align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .back:hover {
   background-color: #730217;
   cursor: pointer;
+  color: white;
 }

@@ -11,11 +11,7 @@ export default function HomeMenu() {
     <div class={menu.topnav}>
       <Head></Head>
       <div className={menu.myLinksActive}>
-        <img
-          className={menu.back}
-          src="back.png"
-          onClick={() => router.back()}
-        ></img>
+        <a className={menu.back} onClick={() => router.back()}></a>
         <Link href={"/"} className={menu.pages}>
           Sobre
         </Link>

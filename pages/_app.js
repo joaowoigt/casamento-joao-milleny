@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <NextThemesProvider attribute="class" defaultTheme="light">
         <style>{`
           * {
-            color-scheme: light;
+            color-scheme: dark;
             background: #f7f0eb;
             color: black;
           }
