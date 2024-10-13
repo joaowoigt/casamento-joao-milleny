@@ -30,10 +30,10 @@ export default function (req, res) {
    ${isGoing === "Sim" ? "irá" : "não irá"} ao seu casamento<br><br>
    ${isGoing === "Sim" ? infos : "Que peninha!"}
    `
-
+  const mailList = ["joaowoigt@gmail.com", "fonsecagmilleny@gmail.com"]
   const mailData = {
     from: "wills030797@gmail.com",
-    to: "joaowoigt@gmail.com",
+    to: mailList,
     subject: subject,
     text: msg,
     html: msg
