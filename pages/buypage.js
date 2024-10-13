@@ -1,7 +1,6 @@
 import { useRouter } from "next/router"
 import container from "../src/components/Container.module.css"
 import fonts from "../src/components/Font.module.css"
-import style from "../src/components/ListItem.module.css"
 import formStyle from "../src/components/Form.module.css"
 import HomeMenu from "../src/homeMenu"
 import Head from "next/head"

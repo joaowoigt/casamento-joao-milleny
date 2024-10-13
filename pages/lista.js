@@ -33,7 +33,7 @@ export default function ListaPage() {
             da lista e{" "}
             <b>
               clicar em comprar, você será redirecionado para uma pagina
-              contendo as instruições!
+              contendo as instruções!
             </b>
           </h3>
           <div className={containers.listGridItem}>
