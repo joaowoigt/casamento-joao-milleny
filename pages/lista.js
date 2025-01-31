@@ -60,8 +60,8 @@ export default function ListaPage() {
             </ListItem>
 
             <ListItem
-              img="\images\pratos.jpg"
-              value="R$ 186,23"
+              img="\images\pratos.png"
+              value="R$ 227,52"
               showValue={false}
             >
               Kit de pratos de jantar
@@ -90,11 +90,11 @@ export default function ListaPage() {
               Kit de cozinha super massa!
             </ListItem>
             <ListItem
-              img="\images\aspirador.webp"
-              value="R$ 579,00"
+              img="\images\mesa.png"
+              value="R$ 599,00"
               showValue={false}
             >
-              Aspirador de pó robo
+              Mesa de jantar
             </ListItem>
             <ListItem
               img="\images\louvre.jpg"
@@ -123,13 +123,6 @@ export default function ListaPage() {
               showValue={false}
             >
               TV grande
-            </ListItem>
-            <ListItem
-              img="\images\lava-seca.webp"
-              value="R$ 4.104,21"
-              showValue={false}
-            >
-              Maquina Lava e Seca
             </ListItem>
             <ListItem
               img="\images\hotel.jpg"
