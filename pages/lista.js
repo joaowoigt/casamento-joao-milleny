@@ -90,6 +90,13 @@ export default function ListaPage() {
               Kit de cozinha super massa!
             </ListItem>
             <ListItem
+              img="\images\garfos.png"
+              value="R$ 509,99"
+              showValue={false}
+            >
+              Faqueiro lindo!
+            </ListItem>
+            <ListItem
               img="\images\mesa.png"
               value="R$ 599,00"
               showValue={false}
