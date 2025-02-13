@@ -12,7 +12,7 @@ export default function ListaPage() {
   const [errorName, setErrorName] = useState(false)
   const [email, setEmail] = useState("")
   const [errorEmail, setErrorEmail] = useState(false)
-  const [isGoing, setIsGoing] = useState("Não")
+  const [isGoing, setIsGoing] = useState("Sim")
   const [adultsGuests, setAdultsGuests] = useState("0")
   const [childreGuests, setChildrenGuests] = useState("0")
   const [childreMiddleGuests, setChildrenMiddleGuests] = useState("0")
