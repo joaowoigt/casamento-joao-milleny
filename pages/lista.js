@@ -58,15 +58,13 @@ export default function ListaPage() {
             >
               Cobertor dupla face
             </ListItem>
-
             <ListItem
-              img="\images\pratos.png"
-              value="R$ 227,52"
+              img="\images\passador.png"
+              value="R$ 168,65"
               showValue={false}
             >
-              Kit de pratos de jantar
+              Ferro a vapor
             </ListItem>
-
             <ListItem
               img="\images\cama.jpg"
               value="R$ 194,00"
@@ -74,7 +72,6 @@ export default function ListaPage() {
             >
               Conjunto de cama branco INCRIVEL
             </ListItem>
-
             <ListItem
               img="\images\restaurante.jpg"
               value="R$ 200,00"
@@ -83,11 +80,39 @@ export default function ListaPage() {
               Jantar romantico na lua de mel
             </ListItem>
             <ListItem
+              img="\images\pratos.png"
+              value="R$ 227,52"
+              showValue={false}
+            >
+              Kit de pratos de jantar
+            </ListItem>
+            <ListItem
+              img="\images\jogodebanho.png"
+              value="R$ 259,00"
+              showValue={false}
+            >
+              Jogo de banho
+            </ListItem>
+            <ListItem
+              img="\images\pillow.png"
+              value="R$ 369,00"
+              showValue={false}
+            >
+              PillowTop!!!!!
+            </ListItem>
+            <ListItem
               img="\images\esteto.webp"
               value="R$ 379,90"
               showValue={false}
             >
               Kit de cozinha super massa!
+            </ListItem>
+            <ListItem
+              img="\images\arranhador.png"
+              value="R$ 499,90"
+              showValue={false}
+            >
+              Arranhador para gatos
             </ListItem>
             <ListItem
               img="\images\garfos.png"
@@ -104,11 +129,25 @@ export default function ListaPage() {
               Mesa de jantar
             </ListItem>
             <ListItem
+              img="\images\microondaspreto.png"
+              value="R$ 619,90"
+              showValue={false}
+            >
+              Microondas preto elengatérrimo
+            </ListItem>
+            <ListItem
               img="\images\louvre.jpg"
               value="R$ 1.000,00"
               showValue={true}
             >
               Passeios na lua de mel
+            </ListItem>
+            <ListItem
+              img="\images\roboaspirador.png"
+              value="R$ 1.289,90"
+              showValue={false}
+            >
+              Robo aspirador inteligente de verdade
             </ListItem>
             <ListItem
               img="\images\frigobar.png"
